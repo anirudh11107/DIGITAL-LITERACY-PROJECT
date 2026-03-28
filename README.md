@@ -1,7 +1,7 @@
 # Student Digital Ambassador Project
 **Course:** Digital Literacy & Professional Presence  
-**Name:** [Your Name]  
-**Branch/Year:** [Your Branch], [Year]
+**Name:** [ANIRUDH VAMSI G]  
+**Branch/Year:** [M.TECH-BIOINFORMATICS], [2025-2029]
 
 ## Project Overview
 This repository contains the completed tasks for the Digital Literacy course. As a Student Digital Ambassador, I have developed resources to promote digital awareness, established a professional online presence, and explored tools for academic collaboration and cybersecurity.
