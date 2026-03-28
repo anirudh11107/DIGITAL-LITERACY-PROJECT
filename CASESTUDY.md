@@ -1,39 +1,16 @@
-# phishing_generator.py - Run to create phishing-casestudy.md in task-5-cybercrime/
+# Case Study: The "Urgent Payroll" Phishing Attack
 
-import os
+## What the Crime Is
+Phishing is a form of social engineering where attackers deceive individuals into revealing sensitive information—such as login credentials, financial details, or personal identification—by masquerading as a trustworthy entity in an electronic communication.
 
-content = """## Phishing Case Study (232 words)
+## How It Typically Happens (Step-by-Step)
+1.  **The Hook:** The attacker sends a high-pressure email appearing to be from a legitimate source, such as a university’s HR department or a well-known bank.
+2.  **The Bait:** The email claims there is a "critical error" with the target's payroll or account security, requiring immediate action to avoid a service suspension.
+3.  **The Trap:** The user clicks a link that directs them to a "spoofed" website. This site is a pixel-perfect replica of the real login portal but is hosted on a malicious server.
+4.  **The Catch:** Once the user enters their username and password, the attacker captures these credentials in real-time. Often, the site then redirects the user to the actual legitimate website to decrease suspicion.
 
-**What the Crime Is**  
-Phishing deceives users into revealing sensitive info via fake communications pretending to be trusted sources like banks or colleges.
+## Who is Typically Targeted
+While phishing can be broad, "Spear Phishing" targets specific groups. In a university setting, students and faculty are primary targets. Attackers exploit the high volume of digital communication and the inherent trust in institutional email addresses to bypass mental defenses.
 
-**How It Typically Happens (Step-by-Step)**  
-1. Attacker gathers target data from social media leaks or public profiles.  
-2. Creates spoofed email/SMS/WhatsApp with urgent lure (e.g., "Your scholarship account is suspended—click to verify").  
-3. Includes malicious link leading to fake login page or malware attachment.  
-4. Victim enters credentials, OTP, or downloads payload.  
-5. Data captured for account takeover, fraud, or ransomware.
-
-**Who Is Usually Targeted**  
-College students (fake job/scholarship offers), small businesses, elderly via bank scams. In India, UPI phishing is rampant.
-
-**Real Published Incident & Consequences**  
-2023 MGM Resorts attack: BlackCat group used vishing (voice phishing) via LinkedIn, tricking an employee into sharing IT credentials. This unlocked ransomware, shutting down Las Vegas casinos, hotels, and slots for 10 days. Losses: $100 million in revenue/expenses, stock drop 12%, lawsuits, and eroded customer trust (Sources: Krebs on Security, MGM SEC 8-K filing, FBI alerts). Victims needed credit monitoring; MGM invested millions in cybersecurity.
-
-**Prevention Tip**: Always use VirusTotal for suspicious URLs, enable 2FA.
-
----
-
-*Task 20 Complete: Add to task-5-cybercrime/phishing-casestudy.md*
-"""
-
-# Create folder and save
-folder = "task-5-cybercrime"
-os.makedirs(folder, exist_ok=True)
-filepath = os.path.join(folder, "phishing-casestudy.md")
-
-with open(filepath, 'w', encoding='utf-8') as f:
-    f.write(content)
-
-print(f"✅ Created: {filepath}")
-print("Ready for your project report!")
+## The Consequences
+For the individual, consequences include identity theft, unauthorized financial withdrawals, and loss of access to academic records. For the organization, it can lead to massive data breaches, malware infiltration (like ransomware), and significant reputational damage.
